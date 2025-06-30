@@ -39,5 +39,8 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <commonModules>CommonModule.ПолучениеКурсовВалют</commonModules>
+  <scheduledJobs>ScheduledJob.РгЗадание</scheduledJobs>
   <dataProcessors>DataProcessor.Обработка</dataProcessors>
+  <informationRegisters>InformationRegister.КурсыВалют</informationRegisters>
 </mdclass:Configuration>

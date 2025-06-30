@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a04f9b0e-6516-42d5-8162-3ada576963ea">
+  <name>РгЗадание</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рг задание</value>
+  </synonym>
+  <methodName>CommonModule.ПолучениеКурсовВалют.РгЗадание</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>
