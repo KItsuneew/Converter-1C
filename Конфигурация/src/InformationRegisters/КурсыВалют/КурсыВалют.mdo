@@ -16,7 +16,6 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
-  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
   <dataLockControlMode>Managed</dataLockControlMode>
   <resources uuid="2ee132c2-1105-4c3d-8bd8-fc4100b291bf">
     <name>Значение</name>
@@ -53,26 +52,9 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
-  </dimensions>
-  <dimensions uuid="bbcdf699-4620-464f-a20d-c4e7214821a5">
-    <name>Дата</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers>
-        <dateFractions>Date</dateFractions>
-      </dateQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
   </dimensions>
   <dimensions uuid="6fa59071-d303-4268-b1f3-d67c1931e7c6">
     <name>ВалютаАббревиатура</name>
