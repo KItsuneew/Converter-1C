@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:form="http://g5.1c.ru/v8/dt/form">
   <items xsi:type="form:FormField">
+    <name>BYN</name>
+    <id>1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>BYN</segments>
+    </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>BYNПриИзменении</name>
+    </handlers>
+    <extendedTooltip>
+      <name>BYNРасширеннаяПодсказка</name>
+      <id>3</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>BYNКонтекстноеМеню</name>
+      <id>2</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
     <name>USD</name>
     <id>16</id>
     <visible>true</visible>
@@ -11,6 +55,10 @@
     <dataPath xsi:type="form:DataPath">
       <segments>USD</segments>
     </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>USDПриИзменении</name>
+    </handlers>
     <extendedTooltip>
       <name>USDРасширеннаяПодсказка</name>
       <id>18</id>
@@ -51,6 +99,10 @@
     <dataPath xsi:type="form:DataPath">
       <segments>EUR</segments>
     </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>EURПриИзменении</name>
+    </handlers>
     <extendedTooltip>
       <name>EURРасширеннаяПодсказка</name>
       <id>9</id>
@@ -81,46 +133,6 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
-    <name>BYN</name>
-    <id>1</id>
-    <visible>true</visible>
-    <enabled>true</enabled>
-    <userVisible>
-      <common>true</common>
-    </userVisible>
-    <dataPath xsi:type="form:DataPath">
-      <segments>BYN</segments>
-    </dataPath>
-    <extendedTooltip>
-      <name>BYNРасширеннаяПодсказка</name>
-      <id>3</id>
-      <type>Label</type>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <extInfo xsi:type="form:LabelDecorationExtInfo">
-        <horizontalAlign>Left</horizontalAlign>
-      </extInfo>
-    </extendedTooltip>
-    <contextMenu>
-      <name>BYNКонтекстноеМеню</name>
-      <id>2</id>
-      <autoFill>true</autoFill>
-    </contextMenu>
-    <type>InputField</type>
-    <editMode>Enter</editMode>
-    <showInHeader>true</showInHeader>
-    <headerHorizontalAlign>Left</headerHorizontalAlign>
-    <showInFooter>true</showInFooter>
-    <extInfo xsi:type="form:InputFieldExtInfo">
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <wrap>true</wrap>
-      <chooseType>true</chooseType>
-      <typeDomainEnabled>true</typeDomainEnabled>
-      <textEdit>true</textEdit>
-    </extInfo>
-  </items>
-  <items xsi:type="form:FormField">
     <name>RUB</name>
     <id>13</id>
     <visible>true</visible>
@@ -131,6 +143,10 @@
     <dataPath xsi:type="form:DataPath">
       <segments>RUB</segments>
     </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>RUBПриИзменении</name>
+    </handlers>
     <extendedTooltip>
       <name>RUBРасширеннаяПодсказка</name>
       <id>15</id>
@@ -171,6 +187,10 @@
     <dataPath xsi:type="form:DataPath">
       <segments>PLN</segments>
     </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>PLNПриИзменении</name>
+    </handlers>
     <extendedTooltip>
       <name>PLNРасширеннаяПодсказка</name>
       <id>12</id>
@@ -211,6 +231,10 @@
     <dataPath xsi:type="form:DataPath">
       <segments>CNY</segments>
     </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>CNYПриИзменении</name>
+    </handlers>
     <extendedTooltip>
       <name>CNYРасширеннаяПодсказка</name>
       <id>6</id>
@@ -243,31 +267,6 @@
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
-    <items xsi:type="form:Button">
-      <name>ФормаПолучитьКурсВалют</name>
-      <id>19</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <extendedTooltip>
-        <name>ФормаПолучитьКурсВалютРасширеннаяПодсказка</name>
-        <id>20</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <commandName>Form.Command.ПолучитьКурсВалют</commandName>
-      <representation>Auto</representation>
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <placementArea>UserCmds</placementArea>
-      <representationInContextMenu>Auto</representationInContextMenu>
-    </items>
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
@@ -424,23 +423,6 @@
       <common>true</common>
     </edit>
   </attributes>
-  <formCommands>
-    <name>ПолучитьКурсВалют</name>
-    <title>
-      <key>ru</key>
-      <value>Получить курс валют</value>
-    </title>
-    <id>1</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ПолучитьКурсВалют</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>
